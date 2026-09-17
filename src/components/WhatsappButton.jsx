@@ -1,17 +1,19 @@
 import { MessageCircle } from 'lucide-react'
+
 import { getWhatsappLink } from '../utils/whatsapp.js'
 
 /**
  * Botão de WhatsApp reutilizável.
  *
  * Props:
- * - mensagem: texto pré-preenchido (use whatsappMessages para padronizar)
- * - variant: 'solid' | 'outline' | 'ghost'
+ * - mensagem: texto pré-preenchido
+ * - variant: 'solid' | 'outline' | 'outlineLight' | 'ghost'
  * - size: 'md' | 'lg'
- * - showIcon: mostra o ícone do WhatsApp
+ * - showIcon: mostra o ícone
  * - className: classes extras
  * - children: texto do botão
  */
+
 export default function WhatsappButton({
   mensagem,
   variant = 'solid',
@@ -31,11 +33,15 @@ export default function WhatsappButton({
   const variants = {
     solid:
       'bg-lime-400 text-forest-950 hover:bg-lime-500 shadow-soft hover:shadow-lg hover:-translate-y-0.5',
+
     outline:
       'border-2 border-forest-800 text-forest-800 hover:bg-forest-800 hover:text-cream-50',
+
     outlineLight:
       'border-2 border-cream-50/60 text-cream-50 hover:bg-cream-50 hover:text-forest-950',
-    ghost: 'text-forest-800 hover:text-forest-900 underline underline-offset-4',
+
+    ghost:
+      'text-forest-800 hover:text-forest-900 underline underline-offset-4',
   }
 
   return (
@@ -51,6 +57,7 @@ export default function WhatsappButton({
           strokeWidth={2.4}
         />
       )}
+
       {children}
     </a>
   )

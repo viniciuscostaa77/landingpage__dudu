@@ -1,39 +1,49 @@
-import { Salad, Dumbbell, Sparkles, ArrowUpRight } from 'lucide-react'
+import { Dumbbell, Brain, ShieldCheck, ArrowUpRight } from 'lucide-react'
+
 import WhatsappButton from './WhatsappButton.jsx'
+
 import { whatsappMessages } from '../utils/whatsapp.js'
 
 const services = [
   {
-    icon: Salad,
-    title: 'Plano de Nutrição',
-    text: 'Plano alimentar individualizado para seus objetivos, rotina e preferências, com orientações claras e sustentáveis.',
-    mensagem: whatsappMessages.consultoriaNutricao,
-    highlight: false,
-  },
-  {
     icon: Dumbbell,
-    title: 'Plano de Treino',
-    text: 'Programação de treino personalizada, com progressão planejada e ajustes conforme sua evolução.',
-    mensagem: whatsappMessages.consultoriaTreino,
+    title: 'Técnica',
+    text: 'Aprenda e desenvolva os fundamentos do Jiu-Jitsu através de treinos e práticas voltadas para sua evolução.',
+    mensagem: whatsappMessages.geral,
     highlight: false,
   },
   {
-    icon: Sparkles,
-    title: 'Plano Completo',
-    text: 'Treino e nutrição integrados em uma única estratégia, com acompanhamento completo em todas as frentes.',
-    mensagem: whatsappMessages.consultoriaCompleta,
+    icon: Brain,
+    title: 'Disciplina',
+    text: 'O Jiu-Jitsu também é sobre foco, respeito e disciplina. Valores que fazem parte de cada treino.',
+    mensagem: whatsappMessages.geral,
+    highlight: false,
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Evolução',
+    text: 'Supere desafios, desenvolva suas habilidades e evolua constantemente dentro e fora do tatame.',
+    mensagem: whatsappMessages.geral,
     highlight: true,
   },
 ]
 
 export default function Services() {
   return (
-    <section id="consultoria" className="container-px py-20 sm:py-28">
+    <section id="aulas" className="container-px py-20 sm:py-28">
       <div className="max-w-xl">
-        <span className="eyebrow text-forest-700">Serviços</span>
+        <span className="eyebrow text-forest-700">
+          Jiu-Jitsu
+        </span>
+
         <h2 className="section-heading mt-4 text-forest-950">
-          Escolha seu plano
+          Evolua dentro e fora do tatame
         </h2>
+
+        <p className="mt-5 text-ink-700">
+          Treinamentos focados no desenvolvimento da técnica, disciplina e
+          evolução de cada aluno.
+        </p>
       </div>
 
       <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -48,16 +58,23 @@ export default function Services() {
           >
             <div
               className={`flex h-12 w-12 items-center justify-center rounded-full ${
-                service.highlight ? 'bg-lime-400 text-forest-950' : 'bg-forest-800/10 text-forest-800'
+                service.highlight
+                  ? 'bg-lime-400 text-forest-950'
+                  : 'bg-forest-800/10 text-forest-800'
               }`}
             >
               <service.icon className="h-6 w-6" strokeWidth={1.75} />
             </div>
 
-            <h3 className="mt-6 font-display text-2xl uppercase">{service.title}</h3>
+            <h3 className="mt-6 font-display text-2xl uppercase">
+              {service.title}
+            </h3>
+
             <p
               className={`mt-3 flex-1 text-sm ${
-                service.highlight ? 'text-cream-50/70' : 'text-ink-700'
+                service.highlight
+                  ? 'text-cream-50/70'
+                  : 'text-ink-700'
               }`}
             >
               {service.text}
