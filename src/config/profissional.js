@@ -8,16 +8,16 @@
 
 const profissional = {
   nome: 'Eduardo Vieira',
-  profissao: 'Personal Trainer e Treinador de Jiu-Jitsu',
+  profissao: ' Treinador de Jiu-Jitsu',
   // Formato: código do país + DDD + número, somente dígitos.
   whatsapp: '5581993810641',  
   instagram: '@eduardovieirajj',
   instagramUrl: 'https://www.instagram.com/eduardovieirajj/',
-  email: 'contato@rafaelmendes.fit',
+  email: 'eduardovieira@gmail.com',
   cidade: 'Recife, PE',
   formacao: 'Bacharel em Educação Fisica e Faixa Marrom em Jiu-jitsu',
   especialidades: [
-    'Hipertrofia e performance',
+    'Disciplina e foco',
     'Aulas particulares ou em pequenos grupo de Jiu-Jitsu',
   ],
 }
