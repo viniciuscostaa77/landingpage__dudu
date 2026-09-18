@@ -11,6 +11,7 @@ export default function About() {
     <section id="sobre" className="container-px py-20 sm:py-28">
       <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
 
+        {/* Foto */}
         <div className="relative mx-auto w-full max-w-sm lg:mx-0">
 
           <div className="absolute -bottom-4 -right-4 h-full w-full rounded-xl2 bg-forest-800/10" />
@@ -30,6 +31,7 @@ export default function About() {
 
         </div>
 
+        {/* Texto */}
         <div>
 
           <span className="eyebrow text-forest-700">
@@ -37,54 +39,76 @@ export default function About() {
           </span>
 
           <h2 className="section-heading mt-4 text-forest-950">
-            {profissional.nome}
+            Atleta. Professor.
+            <br />
+            Futuro treinador de alta performance.
           </h2>
 
-          <p className="mt-2 text-lg font-semibold text-lime-600">
-            {profissional.profissao}
-          </p>
-
           <p className="mt-6 max-w-xl text-ink-700">
-            Sou faixa marrom de Jiu-Jitsu e venho construindo minha trajetória
-            no esporte com dedicação, disciplina e vontade de evoluir a cada
-            treino.
+            Sou atleta e professor de Jiu-Jitsu, faixa-marrom, com 8 anos de
+            experiência dentro dos tatames e uma trajetória marcada por
+            competições e conquistas em diferentes níveis.
           </p>
 
           <p className="mt-4 max-w-xl text-ink-700">
-            Ao longo dessa caminhada, tive a oportunidade de participar do
-            Campeonato Sul-Americano de Jiu-Jitsu e também de conquistar uma
-            medalha nos Jogos Universitários Brasileiros (JUBs).
+            Sou Campeão Brasileiro Universitário, medalhista Sul-Americano e
+            Pernambucano, além de ter competido em diversos estados do Brasil.
+            Cada competição trouxe experiências que hoje fazem parte da minha
+            forma de enxergar e ensinar o esporte.
           </p>
 
           <p className="mt-4 max-w-xl text-ink-700">
-            Atualmente, também sou estudante de Educação Física, buscando unir
-            minha experiência dentro do tatame com os conhecimentos que venho
-            adquirindo durante minha formação.
+            Atualmente, sou acadêmico de Educação Física – Bacharelado,
+            buscando unir a experiência prática do Jiu-Jitsu ao conhecimento
+            científico do treinamento esportivo.
           </p>
 
-          <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <p className="mt-4 max-w-xl text-ink-700">
+            Meu propósito é formar e desenvolver atletas, desde aqueles que
+            estão começando no esporte até competidores que buscam alta
+            performance, trabalhando técnica, preparação física, disciplina e
+            evolução contínua.
+          </p>
 
-            <li className="flex items-start gap-2 text-sm text-ink-700">
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+
+            <div className="flex items-start gap-2 text-sm text-ink-700">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
-              Faixa Marrom de Jiu-Jitsu
-            </li>
+              <span>Faixa Marrom de Jiu-Jitsu</span>
+            </div>
 
-            <li className="flex items-start gap-2 text-sm text-ink-700">
+            <div className="flex items-start gap-2 text-sm text-ink-700">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
-              Participação no Sul-Americano
-            </li>
+              <span>8 anos de experiência</span>
+            </div>
 
-            <li className="flex items-start gap-2 text-sm text-ink-700">
+            <div className="flex items-start gap-2 text-sm text-ink-700">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
-              Medalhista nos JUBs
-            </li>
+              <span>Campeão Brasileiro Universitário</span>
+            </div>
 
-            <li className="flex items-start gap-2 text-sm text-ink-700">
+            <div className="flex items-start gap-2 text-sm text-ink-700">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
-              Estudante de Educação Física
-            </li>
+              <span>Medalhista Sul-Americano e Pernambucano</span>
+            </div>
 
-          </ul>
+            <div className="flex items-start gap-2 text-sm text-ink-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
+              <span>Acadêmico de Educação Física</span>
+            </div>
+
+            <div className="flex items-start gap-2 text-sm text-ink-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
+              <span>Foco em treinamento esportivo</span>
+            </div>
+
+          </div>
+
+          <p className="mt-8 max-w-xl text-sm font-semibold leading-6 text-forest-800">
+            Experiência de quem vive o esporte. Conhecimento de quem busca
+            entender o treinamento. Compromisso de quem quer levar atletas ao
+            próximo nível.
+          </p>
 
           <div className="mt-9">
             <WhatsappButton
@@ -100,4 +124,4 @@ export default function About() {
       </div>
     </section>
   )
-}
+} 
