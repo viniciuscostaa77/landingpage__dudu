@@ -10,12 +10,13 @@ export default function About() {
   return (
     <section id="sobre" className="container-px py-20 sm:py-28">
       <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
-        
+
         <div className="relative mx-auto w-full max-w-sm lg:mx-0">
+
           <div className="absolute -bottom-4 -right-4 h-full w-full rounded-xl2 bg-forest-800/10" />
 
           <img
-            src="public/fotoo__.png"
+            src="/fotoo__.png"
             alt={`${profissional.nome}, ${profissional.profissao}`}
             className="relative aspect-[3/4] w-full rounded-xl2 object-cover shadow-card"
           />
@@ -26,9 +27,11 @@ export default function About() {
               {profissional.cidade}
             </p>
           </div>
+
         </div>
 
         <div>
+
           <span className="eyebrow text-forest-700">
             Sobre o professor
           </span>
@@ -42,26 +45,45 @@ export default function About() {
           </p>
 
           <p className="mt-6 max-w-xl text-ink-700">
-            O Jiu-Jitsu vai muito além do tatame. É uma prática que envolve
-            técnica, disciplina, respeito e evolução constante.
+            Sou faixa marrom de Jiu-Jitsu e venho construindo minha trajetória
+            no esporte com dedicação, disciplina e vontade de evoluir a cada
+            treino.
           </p>
 
           <p className="mt-4 max-w-xl text-ink-700">
-            Meu objetivo é proporcionar um ambiente de aprendizado onde cada
-            aluno possa desenvolver suas habilidades, superar desafios e
-            evoluir dentro e fora dos treinos.
+            Ao longo dessa caminhada, tive a oportunidade de participar do
+            Campeonato Sul-Americano de Jiu-Jitsu e também de conquistar uma
+            medalha nos Jogos Universitários Brasileiros (JUBs).
+          </p>
+
+          <p className="mt-4 max-w-xl text-ink-700">
+            Atualmente, também sou estudante de Educação Física, buscando unir
+            minha experiência dentro do tatame com os conhecimentos que venho
+            adquirindo durante minha formação.
           </p>
 
           <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {profissional.especialidades.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-2 text-sm text-ink-700"
-              >
-                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
-                {item}
-              </li>
-            ))}
+
+            <li className="flex items-start gap-2 text-sm text-ink-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
+              Faixa Marrom de Jiu-Jitsu
+            </li>
+
+            <li className="flex items-start gap-2 text-sm text-ink-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
+              Participação no Sul-Americano
+            </li>
+
+            <li className="flex items-start gap-2 text-sm text-ink-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
+              Medalhista nos JUBs
+            </li>
+
+            <li className="flex items-start gap-2 text-sm text-ink-700">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest-700" />
+              Estudante de Educação Física
+            </li>
+
           </ul>
 
           <div className="mt-9">
@@ -72,6 +94,7 @@ export default function About() {
               Conversar no WhatsApp
             </WhatsappButton>
           </div>
+
         </div>
 
       </div>
